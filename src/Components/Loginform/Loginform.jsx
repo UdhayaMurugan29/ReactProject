@@ -16,7 +16,7 @@ const Loginform = () => {
       <label htmlFor="password"> </label>
       <input type="password" id="password" name="password" placeholder="Password" />
       <label></label><button type="submit">Login</button><label></label>
-      <label class="forgot-password">Forgoit Password?</label>
+      <label class="forgot-password">Forgot Password?</label>
      
     </form></div>
   )
