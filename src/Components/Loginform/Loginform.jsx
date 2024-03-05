@@ -28,8 +28,7 @@ const Loginform = () => {
             errors.password = 'Invalid password';
         }
         if (Object.keys(errors).length === 0) {
-            navigate('/dashboard/dashboard');
-
+         navigate('/dashboard');
         } else {
             setErrors(errors);
         }
