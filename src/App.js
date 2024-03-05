@@ -52,6 +52,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Loginform from './Components/Loginform/Loginform';
 import Dashboard from './Components/Dashboard/Dashboard';
+import Employee from './Components/Employee/Employee';
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Loginform />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/employee" element={<Employee/>} />
         {/* You can add more routes here */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

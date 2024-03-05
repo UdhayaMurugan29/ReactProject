@@ -1,7 +1,10 @@
 // Dashboard.js
 import React from 'react';
 import './Dashboard.css';
-import logo from './img/group4.png';
+import { Link } from 'react-router-dom';
+import { FaHome, FaUser } from 'react-icons/fa';
+import logo2 from './img/Group 46.png';
+import logo1 from './img/group4.png';
 const HorizontalBar = ({ label, percentage, color }) => {
   const gradient = `linear-gradient(to right, ${color} ${percentage}%, transparent ${percentage}%)`;
 
@@ -41,14 +44,31 @@ const Dashboard = () => {
   
   
   return (
-    <div className="dashboard-container">
+    <><div className="dashboard-container">
       <form>
-        <label><img src={logo} alt="Logo" className="logo1" /></label>
-        <div className='horizontal-bar-container' >
-        <input type="text1" placeholder="Employee Productivity Dashboard" />
-        <HorizontalBarContainer data={data} /> </div>
-      </form> 
-    </div>
+        
+         <label><img src={logo1} alt="Logo" className="logo1" /></label>
+         <Link to="/login">
+         <label><img src={logo2} alt="Logo" className="logo2" /></label>  </Link>
+        <div className='horizontal-bar-container'>
+          <input type="text1" placeholder="Employee Productivity Dashboard" />
+          <HorizontalBarContainer data={data} /> </div>
+      </form>
+
+    </div><div className="status-bar">
+    
+      <div className="icon">
+      <Link to="/dashboard" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <FaHome /> </Link>
+      </div>
+      
+      <div className="icon">
+      <Link to="/Employee" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <FaUser /> </Link>
+      </div>
+    
+      </div></>
+     
   );
 };
   
