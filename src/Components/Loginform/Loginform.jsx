@@ -19,7 +19,7 @@ const Loginform = () => {
         let errors = {};
         if (!formData.email) {
             errors.email = 'Email is required';
-        } else if (formData.email !== 'user') {
+        } else if (formData.email !== 'user@gmail.com') {
             errors.email = 'Invalid email';
         }
         if (!formData.password) {
@@ -40,7 +40,7 @@ const Loginform = () => {
                 <label><img src={logo} alt="Logo" className="logo" /></label>
                 <label className='text'> We are electric </label>
                 <label htmlFor="username"></label>
-                <input type="text" id="username" name="email" placeholder="Email" value={formData.email} onChange={handleChange} style={{ color: 'white',textAlign:'center'}} />
+                <input type="email" id="username" name="email" placeholder="Email" value={formData.email} onChange={handleChange} style={{ color: 'white',textAlign:'center'}} />
                 <label htmlFor="password"></label>
                 <input type="password" id="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} style={{ color: 'white',textAlign:'center'}}  />
                 <label><button type="submit">Login</button></label>

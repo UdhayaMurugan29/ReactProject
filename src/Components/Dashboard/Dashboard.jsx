@@ -46,11 +46,9 @@ const Dashboard = () => {
   return (
     <><div className="dashboard-container">
       <form>
-        
          <label><img src={logo1} alt="Logo" className="logo1" /></label>
-         <Link to="/login">
-         <label><img src={logo2} alt="Logo" className="logo2" /></label>  </Link>
-        <div className='horizontal-bar-container'>
+      
+          <div className='horizontal-bar-container'>
           <input type="text1" placeholder="Employee Productivity Dashboard" />
           <HorizontalBarContainer data={data} /> </div>
       </form>

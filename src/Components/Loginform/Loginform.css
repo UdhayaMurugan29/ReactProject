@@ -57,7 +57,7 @@ padding-left: 50px;
     margin-bottom: 10px;
   }
 
-.login-form input[type="text"],
+.login-form input[type="email"],
 .login-form input[type="password"],
 .login-form button {
 left: 61px;
@@ -72,7 +72,7 @@ margin-bottom: 10px;
 opacity: 1;
   }
 
-  input[type="text"]::placeholder,
+  input[type="email"]::placeholder,
   input[type="password"]::placeholder {
     text-align: left;
     padding-left: 10px; 

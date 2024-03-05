@@ -23,15 +23,6 @@
 mix-blend-mode: normal;
 opacity: 1;
 }
-.logo2 {
-    padding-top: 20px;
-    width: 71px;
-    height: 70px;
-    padding-left: 140px;
-    padding-bottom: 10px;
-mix-blend-mode: normal;
-opacity: 1;
-}
 
 .horizontal-bar-container {
     display: flex;
@@ -50,7 +41,8 @@ opacity: 1;
 input[type="text1"]::placeholder 
  {
 top : 224px;
-left: 448px;
+
+/* left: 448px; */
 width: 322px;
 height: 25px;
 /* UI Properties */
@@ -87,13 +79,12 @@ color: #FFFFFFB3 ;
   }
   
   .icon {
-    padding-left: 110px;
+    padding-left:90px;
     top: 70px;
     left: 430px;
     width: 100px;
     height: 40px;
     /* UI Properties */
-    color: inherit;
     mix-blend-mode: normal;
     opacity: 1;
     cursor: pointer; 
