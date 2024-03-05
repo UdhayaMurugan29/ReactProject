@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './Loginform.css';
 import logo from './img/Group 3.png';
+import { useNavigate  } from 'react-router-dom';
 
 const Loginform = () => {
-  
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({ email: '', password: '' });
     const [errors, setErrors] = useState({});
 
@@ -27,7 +28,8 @@ const Loginform = () => {
             errors.password = 'Invalid password';
         }
         if (Object.keys(errors).length === 0) {
-          setErrors(errors);
+            navigate('/dashboard/dashboard');
+
         } else {
             setErrors(errors);
         }
