@@ -19,12 +19,12 @@
 // export default App;
 
 import React from 'react';
-import Login from './Components/Loginform/Loginform'; // Assuming Login is your login component
+import Loginform from './Components/Loginform/Loginform'; // Assuming Login is your login component
 
 function App() {
   return (
     <div>
-      <Login />
+      <Loginform />
     </div>
   );
 }
