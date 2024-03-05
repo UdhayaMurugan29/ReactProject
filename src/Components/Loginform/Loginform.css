@@ -85,9 +85,7 @@ opacity: 1;
     width:238px;
     margin-top : 10px;
     background: transparent linear-gradient(180deg, #00FF2580 0%, #000000 100%, #36A54680 100%) 0% 0% no-repeat padding-box;
-    mix-blend-mode: normal;
-border: 2px solid #8CFF0026;
-opacity: 1;
+    
   }
   
   .login-form button:hover {
