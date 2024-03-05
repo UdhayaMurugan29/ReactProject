@@ -16,9 +16,6 @@ const HorizontalBar = ({ label, percentage, color }) => {
   );
 };
 
-
-
-
   const HorizontalBarContainer = ({ data }) => {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -30,7 +27,6 @@ const HorizontalBar = ({ label, percentage, color }) => {
       </div>
     );
   };
-  
   
 const Dashboard = () => {
   const data = [
