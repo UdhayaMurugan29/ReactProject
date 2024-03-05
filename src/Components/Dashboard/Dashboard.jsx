@@ -18,7 +18,7 @@ const HorizontalBar = ({ label, percentage, color }) => {
 
   const HorizontalBarContainer = ({ data }) => {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div style={{ display: 'flex', flexDirection: 'column'}}>
         {data.map((item, index) => (
           <div key={index} style={{ marginBottom: '10px' }}>
             <HorizontalBar label={item.label} percentage={item.percentage} color={item.color} />
@@ -45,7 +45,7 @@ const Dashboard = () => {
       <form>
         <label><img src={logo} alt="Logo" className="logo1" /></label>
         <div className='horizontal-bar-container' >
-        <input type="text1" placeholder="Employee Productivity Dashboard"  style={{ color: 'white',textAlign:'center'}} />
+        <input type="text1" placeholder="Employee Productivity Dashboard" />
         <HorizontalBarContainer data={data} /> </div>
       </form> 
     </div>
