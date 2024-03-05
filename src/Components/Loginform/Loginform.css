@@ -75,6 +75,7 @@ opacity: 1;
 }
   
   .login-form button {
+    margin-top : 10px;
     background: transparent linear-gradient(180deg, #00FF2580 0%, #000000 100%, #36A54680 100%) 0% 0% no-repeat padding-box;
   }
   
